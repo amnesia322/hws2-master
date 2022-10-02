@@ -3,29 +3,55 @@
 }
 
 .friendImageAndText {
+    display: flex;
+    align-items: flex-end;
 
+    margin: 10px;
 }
 
 .friendImageAndText img {
-
+    width: 48px;
+    height: 48px;
+    align-self: flex-end;
 }
 
 .friendText {
 
+    padding: 10px;
+
+    border-radius: 7px 7px 7px 0;
+    min-width: 450px;
+    max-width: 450px;
+    background: #F5F7FB;
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
 }
 
 .friendText:after {
 
 }
 
-.friendName {
+.angle {
+    height: 20px;
+    width: 20px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 20px, rgba(245, 247, 251, 0.9) 0);
+}
 
+.friendName {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .friendMessageText {
-
+    font-size: 16px;
+    line-height: 20px;
+    word-wrap: break-word;
 }
 
 .friendTime {
-
+    align-self: flex-end;
+    padding: 0 15px 0 21px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 600;
 }
