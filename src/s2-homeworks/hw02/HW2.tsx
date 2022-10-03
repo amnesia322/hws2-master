@@ -47,18 +47,14 @@ switch (filter) {
         return affairs
 }
 }
-export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
-    return affairs.filter(f => f._id !== _id)
-}
+export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> =>  affairs.filter(f => f._id !== _id)
 
 function HW2() {
     const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs) // need to fix any
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
-    const deleteAffairCallback = (_id: number) => { // need to fix any
-        setAffairs(deleteAffair(affairs, _id))
-    }
+    const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id))
 
     return (
         <div id={'hw2'}>
