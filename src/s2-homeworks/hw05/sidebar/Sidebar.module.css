@@ -9,9 +9,11 @@
     height: 100vh;
     z-index: 2;
     padding: 20px;
+    visibility: hidden;
 }
 
 .sidebar.open {
+    visibility: visible;
     transition-duration: 500ms;
     transform: translate(0px);
 }
@@ -30,8 +32,6 @@
     padding: 50px;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .nav a {
