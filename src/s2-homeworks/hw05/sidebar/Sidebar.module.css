@@ -42,6 +42,7 @@
     text-decoration: none;
     margin-bottom: 45px;
     transition: 90ms linear;
+    visibility: visible;
 }
 
 .nav a:hover {
