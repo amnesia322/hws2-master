@@ -14,7 +14,7 @@ props.onChange(event, newValue)
             {...props} // отдаём слайдеру пропсы если они есть (value например там внутри)
             value={props.value}
             onChange={onChangeHandler}
-            color={'green'}
+            style={{color: '#00CC22'}}
         />
     )
 }
