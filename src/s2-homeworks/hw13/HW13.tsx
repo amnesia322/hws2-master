@@ -46,7 +46,7 @@ const HW13 = () => {
                 .catch((e) => {
                     console.log(e)
                     // дописать
-                    setCode(`Код ${e.response.status}!`)
+                    setCode(`Ошибка ${e.response.status}!`)
 
                     switch (e.response.status) {
                         case 500:
@@ -74,6 +74,7 @@ const HW13 = () => {
     return (
         <div id={'hw13'}>
             <div className={s2.hwTitle}>Homework #13</div>
+            <hr/>
 
             <div className={s2.hw}>
                 <div className={s.buttonsContainer}>

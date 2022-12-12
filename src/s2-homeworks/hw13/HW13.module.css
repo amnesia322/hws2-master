@@ -1,7 +1,12 @@
 .buttonsContainer {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 90px;
 }
 
 .responseContainer {
+    display: flex;
+    justify-content: space-around;
 }
 
 .imageContainer {
@@ -11,12 +16,24 @@
 }
 
 .textContainer{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    align-self: center;
 }
 
 .code {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
 }
 
 .text {
+
 }
 .info {
+
 }
